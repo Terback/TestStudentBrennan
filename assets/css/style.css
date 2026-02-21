@@ -407,12 +407,13 @@ main {
   min-width: 100%;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
 }
 
 .contact-info {
-  max-width: calc(100% - 46px);
-  width: calc(100% - 46px);
+  max-width: calc(100% - 40px);
+  width: calc(100% - 40px);
+  min-width: 0;
 }
 
 .contact-title {
@@ -1247,7 +1248,6 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #PORTFOLIO, BLOG 
    */
 
-  .project-img,
   .blog-banner-box { height: auto; }
 
 }
@@ -1362,9 +1362,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .contacts-list { gap: 20px; }
 
+  .contact-item { gap: 10px; }
+
   .contact-info {
-    max-width: calc(100% - 64px);
-    width: calc(100% - 64px);
+    max-width: calc(100% - 58px);
+    width: calc(100% - 58px);
   }
 
 
@@ -1831,6 +1833,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 0;
     padding-top: 60px;
     z-index: 1;
+    min-width: 260px;
   }
 
   .sidebar-info { flex-direction: column; }
@@ -1855,12 +1858,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .contact-info :is(.contact-link) {
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: visible;
   }
 
   .contact-info :is(.contact-link, time, address) {
-    --fs-7: 14px;
+    --fs-7: 13px;
     font-weight: var(--fw-300);
   }
 
